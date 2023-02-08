@@ -32,10 +32,10 @@ class CartController extends Controller
         $cart->product_price = $request->product_price;
         $cart->save();
 
-        return redirect('cart');    
+        return redirect('cart');
     }
 
-    public function destroyItem($id)
+    public function destroyItem1($id)
     {
         Cart::destroy($id);
         return redirect('cart');
